@@ -1,0 +1,87 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"import": {
+		"scope": "python, jupyter",
+		"prefix": ["packages","datascience"],
+		"body": [
+			"# Data manipulation",
+			"import pandas as pd",
+			"import numpy as np",
+			"# Data visualization",
+			"import matplotlib.pyplot as plt",
+			"import seaborn as sns",
+			"import plotly.express as px",
+			"# Ignore warnings",
+			"import warnings",
+			"warnings.filterwarnings('ignore')"
+		],
+		"description": "bulk import data science packages"
+	},
+
+	"read dataframe": {
+		"scope": "python, jupyter",
+		"prefix": ["read"],
+		"body": [
+			"${3:data} = pd.${2|read_csv,read_xlsx,read_json|}('${1:type file}')"
+		],
+		"description": "bulk import data science packages"
+	},
+
+	"comment head": {
+		"scope": "python, jupyter",
+		"prefix": ["#", "comment", "head"],
+		"body": [
+			"#-------------------------------------------------------------------",
+			"# $1",
+			"#-------------------------------------------------------------------"
+		],
+		"description": "comment head"
+	},
+
+	"histplot for all numeric column": {
+		"scope": "python, jupyter",
+		"prefix": ["histplot","sns-hist","distplot"],
+		"body": [
+			"fig, axes = plt.subplots(nrows=3, ncols=3, figsize=(15,15))",
+			"axes = axes.flat",
+			
+			"for i, column in enumerate(abalone1):",
+				"sns.histplot(",
+					"data = abalone,",
+					"x    = column,",
+					"stat = 'count',",
+					"kde  = True,",
+					"'color   = (list(plt.rcParams['axes.prop_cycle'])*2)[i]['color'],'",
+					"line_kws= {'linewidth': 2},",
+					"alpha   = 0.3,",
+					"ax      = axes[i]",
+			")"
+		],
+		"description": "histplots for all numeric column using for loops"
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
