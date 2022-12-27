@@ -28,7 +28,7 @@
 		"scope": "python, jupyter",
 		"prefix": ["read"],
 		"body": [
-			"${3:data} = pd.${2|read_csv,read_xlsx,read_json|}('${1:type file}')"
+			"${3:raw_data} = pd.${2|read_csv,read_xlsx,read_json|}('${1:type file}')"
 		],
 		"description": "bulk import data science packages"
 	},
@@ -44,29 +44,128 @@
 		"description": "comment head"
 	},
 
+
 	"histplot for all numeric column": {
 		"scope": "python, jupyter",
-		"prefix": ["histplot","sns-hist","distplot"],
+		"prefix": ["for-hist","sns-hist"],
 		"body": [
 			"fig, axes = plt.subplots(nrows=3, ncols=3, figsize=(15,15))",
 			"axes = axes.flat",
 			
-			"for i, column in enumerate(abalone1):",
-				"sns.histplot(",
-					"data = abalone,",
-					"x    = column,",
-					"stat = 'count',",
-					"kde  = True,",
-					"'color   = (list(plt.rcParams['axes.prop_cycle'])*2)[i]['color'],'",
-					"line_kws= {'linewidth': 2},",
-					"alpha   = 0.3,",
-					"ax      = axes[i]",
-			")"
+			"for index, column in enumerate(abalone1):",
+				"\tsns.histplot(",
+					"\t\tdata = abalone,",
+					"\t\tx    = column,",
+					"\t\tstat = 'count',",
+					"\t\tkde  = True,",
+					"\t\tcolor   = (list(plt.rcParams['axes.prop_cycle'])*2)[index]['color'],",
+					"\t\tline_kws= {'linewidth': 2},",
+					"\t\talpha   = 0.3,",
+					"\t\tax      = axes[index]",
+			")",
+			"\taxes[index].set_title(column, fontsize = 15)",
+    		"\taxes[index].tick_params(labelsize = 8)",
+    		"\taxes[index].set_xlabel('')"
 		],
 		"description": "histplots for all numeric column using for loops"
 	},
 
 
+	"Outliers": {
+		"scope": "python, jupyter",
+		"prefix": ["zout","out-z"],
+		"body": [
+			"def outliers_zscore(data):",
+    			"\tdata = sorted(data)\n",
+    			"\tmean = np.mean(data)\n",
+    			"\tstd  = np.std(data)\n",
+    
+    			"\toutliers = []",
+    			"\tfor i, value in enumerate(data):",
+        			"\t\tzscore = (value - mean)/std",
+        			"\t\tif zscore > 3:",
+            		"\t\t\toutliers.append(i)",
+    			"\treturn outliers"
+		],
+		"description": "Outliers using zscore"
+	},
+
+
+		"Identify Outliers IQR": {
+			"prefix": ["outlers-iqr-formula"],
+			"body": [
+				"def outliers_iqr(data):",
+				"    # Sort the data in ascending order",
+				"    data = sorted(data)",
+				"    ",
+				"    # Find the length of the data",
+				"    n = len(data)",
+				"    ",
+				"    # Calculate the 25th percentile",
+				"    p25 = data[int(n * 0.25)]",
+				"    ",
+				"    # Calculate the 75th percentile",
+				"    p75 = data[int(n * 0.75)]",
+				"    ",
+				"    # Calculate the IQR",
+				"    iqr = p75 - p25",
+				"    ",
+				"    # Calculate the lower and upper bounds for identifying outliers",
+				"    lower_bound = p25 - (iqr * 1.5)",
+				"    upper_bound = p75 + (iqr * 1.5)",
+				"    ",
+				"    outliers = []",
+				"    ",
+				"    # Iterate through the data and identify any values that are outside the lower and upper bounds",
+				"    for i, value in enumerate(data):",
+				"        if value < lower_bound or value > upper_bound:",
+				"            outliers.append(i)",
+				"    ",
+				"    return outliers"
+			],
+			"description": "Identify outliers in a dataset using the interquartile range (IQR) method"
+		},
+
+	"Identify Outliers zscore": {
+        "prefix": ["outliers-zscore-formula"],
+        "body": [
+            "def outliers_iqr(data):",
+            "    # Calculate the mean of the data",
+            "    mean = sum(data) / len(data)",
+            "    ",
+            "    # Calculate the standard deviation of the data",
+            "    variance = sum((x - mean) ** 2 for x in data) / len(data)",
+            "    std_dev = variance ** 0.5",
+            "    ",
+            "    outliers = []",
+            "    ",
+            "    # Iterate through the data and identify any values with a z-score greater than 3",
+            "    for i, value in enumerate(data):",
+            "        z_score = (value - mean) / std_dev",
+            "        if z_score > 3:",
+            "            outliers.append(i)",
+            "    ",
+            "    return outliers"
+        ],
+        "description": "Identify outliers in a dataset using the z-score method"
+    },
+
+
+	"Visualize Continuous Columns": {
+        "prefix": "viz-continuos",
+        "body": [
+            "fig,ax = plt.subplots(12,3,figsize=(30,90))",
+            "for index,i in enumerate(${1:df}.columns):",
+            "    sns.distplot(${1:df}[i],ax=ax[index,0],color='green')",
+            "    sns.boxplot(${1:df}[i],ax=ax[index,1],color='yellow')",
+            "    stats.probplot(${1:df}[i],plot=ax[index,2])",
+            "    ",
+            "fig.tight_layout()",
+            "fig.subplots_adjust(top=0.95)",
+            "plt.suptitle(\"Visualizing continuous columns\",fontsize=50)"
+        ],
+        "description": "Visualize the distribution, boxplot, and probability plot of the continuous columns in a dataset"
+    }
 
 
 
@@ -84,4 +183,56 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 }
