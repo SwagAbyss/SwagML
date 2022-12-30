@@ -165,6 +165,41 @@
             "plt.suptitle(\"Visualizing continuous columns\",fontsize=50)"
         ],
         "description": "Visualize the distribution, boxplot, and probability plot of the continuous columns in a dataset"
+    },
+
+
+	"Sublists to flat list": {
+        "prefix": "flat",
+        "body": [
+            "out1 = [item for sublist in outliers for item in sublist]",
+			"out2 = sum(outliers, [])"
+        ],
+        "description": "Visualize the distribution, boxplot, and probability plot of the continuous columns in a dataset"
+    },
+
+
+	"loop to remove outliers": {
+        "prefix": "rm-out-straight",
+        "body": [
+            "for column in data.columns:",
+			"out = list(outliers_zscore(data[column]))",
+			"data = data.drop(out)"
+        ],
+        "description": "Remove outliers using for loop and drop method"
+    },
+
+
+	"loop to find outliers": {
+        "prefix": "find-outliers-index",
+        "body": [
+			"outliers = []",
+            "for column in data.columns:",
+			"    index = list(outliers_zscore(data[column]))",
+			"    outliers.extend(index)",
+			"",
+			"data = data.drop(outliers)"
+        ],
+        "description": "Find outliers using for loop and drop method"
     }
 
 
@@ -175,64 +210,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 }
