@@ -51,21 +51,21 @@
 		"body": [
 			"fig, axes = plt.subplots(nrows=3, ncols=3, figsize=(15,15))",
 			"axes = axes.flat",
-			
+			"",
 			"for index, column in enumerate(abalone1):",
-				"\tsns.histplot(",
-					"\t\tdata = abalone,",
-					"\t\tx    = column,",
-					"\t\tstat = 'count',",
-					"\t\tkde  = True,",
-					"\t\tcolor   = (list(plt.rcParams['axes.prop_cycle'])*2)[index]['color'],",
-					"\t\tline_kws= {'linewidth': 2},",
-					"\t\talpha   = 0.3,",
-					"\t\tax      = axes[index]",
+			"\tsns.histplot(",
+			"\t\tdata = abalone,",
+			"\t\tx    = column,",
+			"\t\tstat = 'count',",
+			"\t\tkde  = True,",
+			"\t\tcolor   = (list(plt.rcParams['axes.prop_cycle'])*2)[index]['color'],",
+			"\t\tline_kws= {'linewidth': 2},",
+			"\t\talpha   = 0.3,",
+			"\t\tax      = axes[index]",
 			")",
 			"\taxes[index].set_title(column, fontsize = 15)",
-    		"\taxes[index].tick_params(labelsize = 8)",
-    		"\taxes[index].set_xlabel('')"
+			"\taxes[index].tick_params(labelsize = 8)",
+			"\taxes[index].set_xlabel('')"
 		],
 		"description": "histplots for all numeric column using for loops"
 	},
@@ -76,16 +76,16 @@
 		"prefix": ["zout","out-z"],
 		"body": [
 			"def outliers_zscore(data):",
-    			"\tdata = sorted(data)\n",
-    			"\tmean = np.mean(data)\n",
-    			"\tstd  = np.std(data)\n",
-    
-    			"\toutliers = []",
-    			"\tfor i, value in enumerate(data):",
-        			"\t\tzscore = (value - mean)/std",
-        			"\t\tif zscore > 3:",
-            		"\t\t\toutliers.append(i)",
-    			"\treturn outliers"
+			"\tdata = sorted(data)\n",
+			"\tmean = np.mean(data)\n",
+			"\tstd  = np.std(data)\n",
+			"",
+			"\toutliers = []",
+			"\tfor i, value in enumerate(data):",
+			"\t\tzscore = (value - mean)/std",
+			"\t\tif zscore > 3:",
+			"\t\t\toutliers.append(i)",
+			"\treturn outliers"
 		],
 		"description": "Outliers using zscore"
 	},
@@ -126,9 +126,9 @@
 			"description": "Identify outliers in a dataset using the interquartile range (IQR) method"
 		},
 
-	"Identify Outliers zscore": {
-        "prefix": ["outliers-zscore-formula"],
-        "body": [
+		"Identify Outliers zscore": {
+            "prefix": ["outliers-zscore-formula"],
+            "body": [
             "def outliers_iqr(data):",
             "    # Calculate the mean of the data",
             "    mean = sum(data) / len(data)",
@@ -200,14 +200,214 @@
 			"data = data.drop(outliers)"
         ],
         "description": "Find outliers using for loop and drop method"
-    }
+    },
 
 
 
+	"Boxplot Outliers": {
+		"prefix": ["outliers_plot","viz-outliers"],
+		"body": [
+		"fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(10,6), dpi=200)",
+		"axes = axes.flat",
+		"for index, column in enumerate(numcols):",
+		" graph = sns.boxplot(",
+		" data=data,",
+		" x=column,",
+		" color=(list(plt.rcParams['axes.prop_cycle']))[index]['color'],",
+		" ax=axes[index]",
+		" )",
+		" axes[index].set_title(column, size=12)",
+		" axes[index].set_xlabel('')",
+		"plt.suptitle('Outliers in every column', fontsize=20)",
+		"plt.tight_layout()"
+		],
+		"description": "Generate boxplot of outliers for all numerical columns in a dataframe"
+		},
+		
+		
+		"Skewness of Continuous Variables": {
+			"prefix": ["skewness_plot","skew-viz"],
+			"body": [
+			"import matplotlib.pyplot as plt",
+			"import seaborn as sns",
+			"",
+			"plt.figure(figsize=(20,10))",
+			"skew = {}",
+			"for col in data.columns:",
+			" if col!='State':",
+			" skewness = data[col].skew()",
+			" print(f'Skewness of {col}: {skewness')",
+			" skew[col]=skewness",
+			"sns.barplot(x=list(skew.keys()), y=list(skew.values()), saturation=2)",
+			"plt.title('Skewness of Continuous Variables', fontsize=30)",
+			"plt.show()"
+			],
+			"description": "Plots skewness of continuous variables in a bar plot"
+			},
+
+		"Kurtosis of Continuous Variables": {
+			"prefix": ["kurtosis_plot, kurt-viz"],
+			"body": [
+			"plt.figure(figsize=(20,10))",
+			"kurt = {}",
+			"for col in data.columns:",
+			" if col!='State':",
+			" kurtosis = data[col].kurt()",
+			" print(f'Kurtosis of {col}: {kurtosis}')",
+			" kurt[col]=kurtosis",
+			"sns.barplot(x=list(kurt.keys()), y=list(kurt.values()), saturation=2)",
+			"plt.title('Kurtosis of Continuous Variables', fontsize=30)",
+			"plt.show()"
+			],
+			"description": "Plots a bar chart of the kurtosis of continuous variables in a dataset"
+				},
+
+		"Categorical feature distribution": {
+			"prefix": ["categorical_distribution, cat-count-dist"],
+				"body": [
+				"sns.set_style('darkgrid')",
+				"plt.figure(figsize=(10,6))",
+				"total = float(len(data))",
+				"ax = sns.countplot(data=data, x='State', saturation=2)",
+				"plt.xticks(rotation=90)",
+				"plt.title('Categorical feature distribution', size=20)",
+				"for p in ax.patches:",
+				"    percentage = '{:.1f}%'.format(100 * p.get_height()/total)",
+				"    x = p.get_x() + p.get_width() / 2.",
+				"    y = p.get_height()",
+				"    ax.annotate(percentage, (x, y),ha='center',va='bottom')",
+				"plt.show()"
+				],
+				"description": "Plots a bar chart showing the distribution of a categorical feature"
+				},
 
 
+		"Relationship between Categorical Features and Label": {
+			"prefix": ["cat-dep-plot"],
+			"body": [
+			"plt.figure(figsize=(12, 6))",
+			"fig = sns.catplot(",
+			"    x='State',",
+			"    y='Profit',",
+			"    saturation=2,",
+			"    data=data.sort_values('Profit',ascending=False))",
+			"plt.show()"
+			],
+			"description": "Generates a boxplot of profit by state using seaborn library."
+			},
+				
+		"Distribution of continuos variables": {
+			"prefix": "histplot",
+			"body": [
+			"sns.set_style('darkgrid')",
+			"fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(10,6))",
+			"axes = axes.flat",
+			"for index, column in enumerate(numcols):",
+			"    graph = sns.histplot(",
+			"    \tdata = data,",
+			"    \tx = column,",
+			"    \tstat = 'count',",
+			"    \tkde = True,",
+			"    \tcolor = (list(plt.rcParams['axes.prop_cycle'])*2)[index]['color'],",
+			"    \tline_kws= {'linewidth': 4},",
+			"    \talpha = 0.7,",
+			"    \tax = axes[index]",
+			")",
+			"    axes[index].set_title(column, fontsize = 10)",
+			"    axes[index].tick_params(labelsize = 8)",
+			"    axes[index].set_xlabel('')",
+			"plt.suptitle('Distribution of Numerical Variables', fontsize=15)",
+			"plt.tight_layout()"
+			],
+			"description": "Plots a histogram with a KDE for multiple numerical variables."
+			},
+					
+		"Numerical features vs target": {
+			"prefix": "scatterplot",
+			"body": [
+			"fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(10,5), dpi=200)",
+			"axes = axes.flat",
+			"numfeatures = ['R&D Spend', 'Administration', 'Marketing Spend']",
+			"target = 'Profit'",
+			"for index, column in enumerate(numfeatures):",
+			"    graph = sns.scatterplot(",
+			"\t\tx=data[column],",
+			"\t\ty=data[target],",
+			"\t\tlinewidths=0.25,",
+			"\t\tcolor=(list(plt.rcParams['axes.prop_cycle'])*2)[index]['color'],",
+			"\t\tax=axes[index]",
+			" )",
+			"\taxes[index].set_title(f'{column} vs {target}', fontsize=12)",
+			" \taxes[index].set_xlabel(column, size=12)",
+			" \taxes[index].set_ylabel(target, size=12)",
+			" \taxes[index].grid()",
+			"",
+			"plt.suptitle('Profit vs Numerical Features', size=20)",
+			"plt.tight_layout()"
+			]
+			},
 
+		"Heatmap": {
+			"prefix": "heatmap",
+			"body": [
+			"plt.figure(figsize=(10, 6))",
+			"sns.heatmap(data.corr(), annot=True, cmap='crest')",
+			"plt.show()"
+			],
+			"description": "Generates a heatmap of correlations between variables in a data set."
+			},
+			
+			
+		"Feature Engineering": {
+			"prefix": "feature_engineering",
+			"body": [
+			"- Drop unwanted Features",
+			"- Handle Missing Values",
+			"- Handle Categorical Features",
+			"- Handle Feature Scalling",
+			"- Remove Outliers",
+			],
+			"description": "Generates a heatmap of correlations between variables in a data set."
+			},
+			
+			
+		"Train the Model": {
+			"prefix": "train-model",
+			"body": [
+			"from sklearn.linear_model import LinearRegression",
+			"model = LinearRegression()",
+			"model.fit(xtrain, ytrain)",
+			"pd.DataFrame(",
+			"data=np.append(model.intercept_, model.coef_),",
+			"index=['Intercept'] + [f'{col} coef.' for col in X.columns],",
+			"columns=['Value']",
+			").sort_values('Value', ascending=False)",
+			],
+			"description": "Train the model and evaluate"
+			},
 
+			"Scaling": {
+				"prefix": "scale",
+				"body": [
+				"from sklearn.preprocessing import RobustScaler",
+				"scale = RobustScaler()",
+				"scale.fit(xtrain)",
+				"xtrain = scale.transform(xtrain)",
+				"xtest = scale.transform(xtest)",
+				],
+				"description": "Train and Test model accuracy percentage"
+				},
+
+		"Train and Test Accuracy": {
+			"prefix": "train-test-acc",
+			"body": [
+			"trainacc = model.score(xtrain, ytrain)",
+			"testacc = model.score(xtest, ytest)",
+			"",	
+			"pd.DataFrame([trainacc*100, testacc*100], index=['Train Accuracy', 'Test Accuracy'], columns=['Value'])",
+			],
+			"description": "Train and Test model accuracy percentage"
+			},
 
 
 }
