@@ -409,5 +409,103 @@
 			"description": "Train and Test model accuracy percentage"
 			},
 
+			"Model Evaluation": {
+				"prefix": ["modeleval", "metrics"],
+				"body": [
+				"from sklearn import metrics",
+				"def model_evaluation(model, xtest, ytest, model_name):",
+				" ypred = model.predict(xtest)",
+				"",
+				" MAE = metrics.mean_absolute_error(ytest, ypred)",
+				" MSE = metrics.mean_squared_error(ytest, ypred)",
+				" RMSE = np.sqrt(MSE)",
+				" R2_Score = metrics.r2_score(ytest, ypred)",
+				"",
+				" return pd.DataFrame(",
+				" [MAE, MSE, RMSE, R2_Score],",
+				" index=['MAE', 'MSE', 'RMSE', 'R2-Score'],",
+				" columns=[model_name],",
+				" )"
+				],
+				"description": "Evaluate a machine learning model's performance using MAE, MSE, RMSE, and R2-Score."
+				}
 
+			//"Find Unwanted Columns":
+
+			// Open the data in a DataFrame
+			// Identify the columns you don't need
+			// Drop those columns from the DataFrame
+			
+			//"Find Missing Values":
+			
+			// Find the count of missing values in each column
+			// Identify columns with high missing values
+			// Analyze the reasons for missing values and decide how to handle them
+			
+			//"Find Features with one value":
+			
+			// Find the unique values in each column
+			// Identify columns with only one unique value
+			// Analyze the impact of these columns on the model
+			
+			//"Explore the Categorical Features":
+			
+			// Find the unique values in each categorical column
+			// Analyze the distribution of values in each column
+			// Identify any imbalanced classes
+			
+			//"Find Categorical Feature Distribution":
+			
+			// Group the data by each categorical column
+			// Find the count of each group
+			// Plot the distribution of each group
+			
+			//"Relationship between Categorical Features and Label":
+			
+			// Group the data by each categorical column and the label
+			// Find the count of each group
+			// Plot the distribution of each group
+			
+			//"Explore the Numerical Features":
+			
+			// Find the summary statistics for each numerical column
+			// Identify any unusual values or trends
+			
+			//"Find Discrete Numerical Features":
+			
+			// Identify numerical columns with a small number of unique values
+			// Analyze the distribution of values in each column
+			
+			//"Relation between Discrete numerical Features and Labels":
+			
+			// Group the data by each discrete numerical column and the label
+			// Find the mean of each group
+			// Plot the distribution of each group
+			
+			//"Find Continous Numerical Features":
+			
+			// Identify numerical columns with a large number of unique values
+			// Analyze the distribution of values in each column
+			
+			//"Distribution of Continous Numerical Features":
+			
+			// Plot the distribution of each continuous numerical column
+			// Identify any unusual values or trends
+			
+			//"Relation between Continous numerical Features and Labels":
+			
+			// Group the data by each continuous numerical column and the label
+			// Find the mean of each group
+			// Plot the distribution of each group
+			
+			//"Find Outliers in numerical features":
+			
+			// Identify the lower and upper bounds for each numerical column
+			// Identify any values outside of those bounds
+			// Analyze the impact of these values on the model
+			
+			//"Explore the Correlation between numerical features":
+			
+			// Plot the pairwise correlations between numerical columns
+			// Identify any strong correlations
 }
