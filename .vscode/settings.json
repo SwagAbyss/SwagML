@@ -1,4 +1,4 @@
 {
     "python.formatting.provider": "autopep8",
-    "notebook.output.textLineLimit": 100
+    "notebook.output.textLineLimit": 1000
 }
