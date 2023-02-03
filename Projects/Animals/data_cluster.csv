@@ -1,0 +1,397 @@
+,Age,Breed_type,Sex,Country,Total,cluster
+0,Under 1,Non Dairy,F,Austria,0,4
+1,Under 1,Non Dairy,M,Austria,0,4
+2,1 to 2,Non Dairy,F,Austria,0,0
+3,1 to 2,Non Dairy,M,Austria,0,0
+4,2 to 3,Dairy,M,Austria,0,0
+5,2 to 3,Non Dairy,F,Austria,0,0
+6,2 to 3,Non Dairy,M,Austria,0,0
+7,3 to 4,Dairy,M,Austria,0,0
+8,3 to 4,Non Dairy,F,Austria,0,0
+9,3 to 4,Non Dairy,M,Austria,0,0
+10,4 to 5,Dairy,M,Austria,0,2
+11,4 to 5,Non Dairy,F,Austria,0,2
+12,4 to 5,Non Dairy,M,Austria,0,2
+13,5 to 6,Dairy,M,Austria,0,4
+14,5 to 6,Non Dairy,F,Austria,0,4
+15,5 to 6,Non Dairy,M,Austria,0,4
+16,6 to 12,Dairy,F,Austria,0,4
+17,6 to 12,Dairy,M,Austria,0,4
+18,6 to 12,Non Dairy,F,Austria,0,4
+19,6 to 12,Non Dairy,M,Austria,0,4
+20,12 to 24,Dairy,F,Austria,11,0
+21,12 to 24,Dairy,M,Austria,0,0
+22,12 to 24,Non Dairy,F,Austria,0,0
+23,12 to 24,Non Dairy,M,Austria,0,0
+24,24 to 30,Dairy,F,Austria,9,0
+25,24 to 30,Dairy,M,Austria,0,0
+26,24 to 30,Non Dairy,F,Austria,0,0
+27,24 to 30,Non Dairy,M,Austria,0,0
+28,30 to 36,Dairy,F,Austria,0,2
+29,30 to 36,Non Dairy,F,Austria,0,2
+30,30 to 36,Non Dairy,M,Austria,0,2
+31,36 to 48,Dairy,F,Austria,0,2
+32,36 to 48,Dairy,M,Austria,0,2
+33,36 to 48,Non Dairy,F,Austria,0,2
+34,36 to 48,Non Dairy,M,Austria,0,2
+35,48 to 60,Dairy,F,Austria,0,2
+36,48 to 60,Non Dairy,F,Austria,0,2
+37,48 to 60,Non Dairy,M,Austria,0,2
+38,60 to 72,Dairy,F,Austria,0,4
+39,60 to 72,Non Dairy,F,Austria,0,4
+40,60 to 72,Non Dairy,M,Austria,0,4
+41,72 and Over,Dairy,F,Austria,0,4
+42,72 and Over,Non Dairy,F,Austria,0,4
+43,72 and Over,Non Dairy,M,Austria,0,4
+44,Under 1,Non Dairy,F,Czech_republic,0,4
+45,Under 1,Non Dairy,M,Czech_republic,0,4
+46,1 to 2,Non Dairy,F,Czech_republic,0,0
+47,1 to 2,Non Dairy,M,Czech_republic,0,0
+48,2 to 3,Dairy,M,Czech_republic,0,0
+49,2 to 3,Non Dairy,F,Czech_republic,0,0
+50,2 to 3,Non Dairy,M,Czech_republic,0,0
+51,3 to 4,Dairy,M,Czech_republic,0,0
+52,3 to 4,Non Dairy,F,Czech_republic,0,0
+53,3 to 4,Non Dairy,M,Czech_republic,0,0
+54,4 to 5,Dairy,M,Czech_republic,0,2
+55,4 to 5,Non Dairy,F,Czech_republic,0,2
+56,4 to 5,Non Dairy,M,Czech_republic,0,2
+57,5 to 6,Dairy,M,Czech_republic,0,4
+58,5 to 6,Non Dairy,F,Czech_republic,0,4
+59,5 to 6,Non Dairy,M,Czech_republic,0,4
+60,6 to 12,Dairy,F,Czech_republic,0,4
+61,6 to 12,Dairy,M,Czech_republic,0,4
+62,6 to 12,Non Dairy,F,Czech_republic,0,4
+63,6 to 12,Non Dairy,M,Czech_republic,0,4
+64,12 to 24,Dairy,F,Czech_republic,22,0
+65,12 to 24,Dairy,M,Czech_republic,1,0
+66,12 to 24,Non Dairy,F,Czech_republic,0,0
+67,12 to 24,Non Dairy,M,Czech_republic,0,0
+68,24 to 30,Dairy,F,Czech_republic,0,0
+69,24 to 30,Dairy,M,Czech_republic,0,0
+70,24 to 30,Non Dairy,F,Czech_republic,0,0
+71,24 to 30,Non Dairy,M,Czech_republic,0,0
+72,30 to 36,Dairy,F,Czech_republic,0,2
+73,30 to 36,Non Dairy,F,Czech_republic,0,2
+74,30 to 36,Non Dairy,M,Czech_republic,0,2
+75,36 to 48,Dairy,F,Czech_republic,0,2
+76,36 to 48,Dairy,M,Czech_republic,0,2
+77,36 to 48,Non Dairy,F,Czech_republic,0,2
+78,36 to 48,Non Dairy,M,Czech_republic,0,2
+79,48 to 60,Dairy,F,Czech_republic,0,2
+80,48 to 60,Non Dairy,F,Czech_republic,0,2
+81,48 to 60,Non Dairy,M,Czech_republic,0,2
+82,60 to 72,Dairy,F,Czech_republic,0,4
+83,60 to 72,Non Dairy,F,Czech_republic,0,4
+84,60 to 72,Non Dairy,M,Czech_republic,0,4
+85,72 and Over,Dairy,F,Czech_republic,0,4
+86,72 and Over,Non Dairy,F,Czech_republic,0,4
+87,72 and Over,Non Dairy,M,Czech_republic,0,4
+88,Under 1,Non Dairy,F,Denmark,0,4
+89,Under 1,Non Dairy,M,Denmark,0,4
+90,1 to 2,Non Dairy,F,Denmark,0,0
+91,1 to 2,Non Dairy,M,Denmark,0,0
+92,2 to 3,Dairy,M,Denmark,0,0
+93,2 to 3,Non Dairy,F,Denmark,0,0
+94,2 to 3,Non Dairy,M,Denmark,0,0
+95,3 to 4,Dairy,M,Denmark,0,0
+96,3 to 4,Non Dairy,F,Denmark,0,0
+97,3 to 4,Non Dairy,M,Denmark,0,0
+98,4 to 5,Dairy,M,Denmark,0,2
+99,4 to 5,Non Dairy,F,Denmark,0,2
+100,4 to 5,Non Dairy,M,Denmark,0,2
+101,5 to 6,Dairy,M,Denmark,0,4
+102,5 to 6,Non Dairy,F,Denmark,0,4
+103,5 to 6,Non Dairy,M,Denmark,0,4
+104,6 to 12,Dairy,F,Denmark,0,4
+105,6 to 12,Dairy,M,Denmark,0,4
+106,6 to 12,Non Dairy,F,Denmark,0,4
+107,6 to 12,Non Dairy,M,Denmark,0,4
+108,12 to 24,Dairy,F,Denmark,40,0
+109,12 to 24,Dairy,M,Denmark,0,0
+110,12 to 24,Non Dairy,F,Denmark,0,0
+111,12 to 24,Non Dairy,M,Denmark,0,0
+112,24 to 30,Dairy,F,Denmark,0,0
+113,24 to 30,Dairy,M,Denmark,0,0
+114,24 to 30,Non Dairy,F,Denmark,0,0
+115,24 to 30,Non Dairy,M,Denmark,0,0
+116,30 to 36,Dairy,F,Denmark,0,2
+117,30 to 36,Non Dairy,F,Denmark,0,2
+118,30 to 36,Non Dairy,M,Denmark,0,2
+119,36 to 48,Dairy,F,Denmark,0,2
+120,36 to 48,Dairy,M,Denmark,0,2
+121,36 to 48,Non Dairy,F,Denmark,0,2
+122,36 to 48,Non Dairy,M,Denmark,1,2
+123,48 to 60,Dairy,F,Denmark,0,2
+124,48 to 60,Non Dairy,F,Denmark,0,2
+125,48 to 60,Non Dairy,M,Denmark,0,2
+126,60 to 72,Dairy,F,Denmark,0,4
+127,60 to 72,Non Dairy,F,Denmark,0,4
+128,60 to 72,Non Dairy,M,Denmark,0,4
+129,72 and Over,Dairy,F,Denmark,0,4
+130,72 and Over,Non Dairy,F,Denmark,0,4
+131,72 and Over,Non Dairy,M,Denmark,0,4
+132,Under 1,Non Dairy,F,France,0,4
+133,Under 1,Non Dairy,M,France,0,4
+134,1 to 2,Non Dairy,F,France,0,0
+135,1 to 2,Non Dairy,M,France,0,0
+136,2 to 3,Dairy,M,France,0,0
+137,2 to 3,Non Dairy,F,France,0,0
+138,2 to 3,Non Dairy,M,France,0,0
+139,3 to 4,Dairy,M,France,0,0
+140,3 to 4,Non Dairy,F,France,0,0
+141,3 to 4,Non Dairy,M,France,0,0
+142,4 to 5,Dairy,M,France,0,2
+143,4 to 5,Non Dairy,F,France,0,2
+144,4 to 5,Non Dairy,M,France,0,2
+145,5 to 6,Dairy,M,France,0,4
+146,5 to 6,Non Dairy,F,France,0,4
+147,5 to 6,Non Dairy,M,France,0,4
+148,6 to 12,Dairy,F,France,0,4
+149,6 to 12,Dairy,M,France,0,4
+150,6 to 12,Non Dairy,F,France,0,4
+151,6 to 12,Non Dairy,M,France,0,4
+152,12 to 24,Dairy,F,France,2,0
+153,12 to 24,Dairy,M,France,0,0
+154,12 to 24,Non Dairy,F,France,0,0
+155,12 to 24,Non Dairy,M,France,2,0
+156,24 to 30,Dairy,F,France,11,0
+157,24 to 30,Dairy,M,France,0,0
+158,24 to 30,Non Dairy,F,France,0,0
+159,24 to 30,Non Dairy,M,France,0,0
+160,30 to 36,Dairy,F,France,15,2
+161,30 to 36,Non Dairy,F,France,0,2
+162,30 to 36,Non Dairy,M,France,0,2
+163,36 to 48,Dairy,F,France,24,2
+164,36 to 48,Dairy,M,France,0,2
+165,36 to 48,Non Dairy,F,France,0,2
+166,36 to 48,Non Dairy,M,France,0,2
+167,48 to 60,Dairy,F,France,14,2
+168,48 to 60,Non Dairy,F,France,0,2
+169,48 to 60,Non Dairy,M,France,0,2
+170,60 to 72,Dairy,F,France,18,4
+171,60 to 72,Non Dairy,F,France,0,4
+172,60 to 72,Non Dairy,M,France,0,4
+173,72 and Over,Dairy,F,France,15,4
+174,72 and Over,Non Dairy,F,France,0,4
+175,72 and Over,Non Dairy,M,France,0,4
+176,Under 1,Non Dairy,F,Germany,0,1
+177,Under 1,Non Dairy,M,Germany,0,1
+178,1 to 2,Non Dairy,F,Germany,0,3
+179,1 to 2,Non Dairy,M,Germany,0,3
+180,2 to 3,Dairy,M,Germany,0,3
+181,2 to 3,Non Dairy,F,Germany,0,3
+182,2 to 3,Non Dairy,M,Germany,0,3
+183,3 to 4,Dairy,M,Germany,0,3
+184,3 to 4,Non Dairy,F,Germany,0,3
+185,3 to 4,Non Dairy,M,Germany,0,3
+186,4 to 5,Dairy,M,Germany,0,2
+187,4 to 5,Non Dairy,F,Germany,0,2
+188,4 to 5,Non Dairy,M,Germany,0,2
+189,5 to 6,Dairy,M,Germany,0,1
+190,5 to 6,Non Dairy,F,Germany,0,1
+191,5 to 6,Non Dairy,M,Germany,0,1
+192,6 to 12,Dairy,F,Germany,0,1
+193,6 to 12,Dairy,M,Germany,0,1
+194,6 to 12,Non Dairy,F,Germany,0,1
+195,6 to 12,Non Dairy,M,Germany,0,1
+196,12 to 24,Dairy,F,Germany,6,3
+197,12 to 24,Dairy,M,Germany,0,3
+198,12 to 24,Non Dairy,F,Germany,0,3
+199,12 to 24,Non Dairy,M,Germany,0,3
+200,24 to 30,Dairy,F,Germany,147,3
+201,24 to 30,Dairy,M,Germany,0,3
+202,24 to 30,Non Dairy,F,Germany,0,3
+203,24 to 30,Non Dairy,M,Germany,0,3
+204,30 to 36,Dairy,F,Germany,29,2
+205,30 to 36,Non Dairy,F,Germany,0,2
+206,30 to 36,Non Dairy,M,Germany,0,2
+207,36 to 48,Dairy,F,Germany,9,2
+208,36 to 48,Dairy,M,Germany,0,2
+209,36 to 48,Non Dairy,F,Germany,0,2
+210,36 to 48,Non Dairy,M,Germany,0,2
+211,48 to 60,Dairy,F,Germany,1,2
+212,48 to 60,Non Dairy,F,Germany,0,2
+213,48 to 60,Non Dairy,M,Germany,0,2
+214,60 to 72,Dairy,F,Germany,0,1
+215,60 to 72,Non Dairy,F,Germany,0,1
+216,60 to 72,Non Dairy,M,Germany,0,1
+217,72 and Over,Dairy,F,Germany,0,1
+218,72 and Over,Non Dairy,F,Germany,0,1
+219,72 and Over,Non Dairy,M,Germany,0,1
+220,Under 1,Non Dairy,F,Ireland,24,1
+221,Under 1,Non Dairy,M,Ireland,0,1
+222,1 to 2,Non Dairy,F,Ireland,18,3
+223,1 to 2,Non Dairy,M,Ireland,0,3
+224,2 to 3,Dairy,M,Ireland,0,3
+225,2 to 3,Non Dairy,F,Ireland,0,3
+226,2 to 3,Non Dairy,M,Ireland,0,3
+227,3 to 4,Dairy,M,Ireland,0,3
+228,3 to 4,Non Dairy,F,Ireland,0,3
+229,3 to 4,Non Dairy,M,Ireland,0,3
+230,4 to 5,Dairy,M,Ireland,0,5
+231,4 to 5,Non Dairy,F,Ireland,0,5
+232,4 to 5,Non Dairy,M,Ireland,0,5
+233,5 to 6,Dairy,M,Ireland,0,1
+234,5 to 6,Non Dairy,F,Ireland,0,1
+235,5 to 6,Non Dairy,M,Ireland,0,1
+236,6 to 12,Dairy,F,Ireland,4,1
+237,6 to 12,Dairy,M,Ireland,0,1
+238,6 to 12,Non Dairy,F,Ireland,0,1
+239,6 to 12,Non Dairy,M,Ireland,0,1
+240,12 to 24,Dairy,F,Ireland,122,3
+241,12 to 24,Dairy,M,Ireland,11,3
+242,12 to 24,Non Dairy,F,Ireland,29,3
+243,12 to 24,Non Dairy,M,Ireland,3,3
+244,24 to 30,Dairy,F,Ireland,12,3
+245,24 to 30,Dairy,M,Ireland,1,3
+246,24 to 30,Non Dairy,F,Ireland,21,3
+247,24 to 30,Non Dairy,M,Ireland,0,3
+248,30 to 36,Dairy,F,Ireland,1,5
+249,30 to 36,Non Dairy,F,Ireland,2,5
+250,30 to 36,Non Dairy,M,Ireland,0,5
+251,36 to 48,Dairy,F,Ireland,11,5
+252,36 to 48,Dairy,M,Ireland,0,5
+253,36 to 48,Non Dairy,F,Ireland,0,5
+254,36 to 48,Non Dairy,M,Ireland,0,5
+255,48 to 60,Dairy,F,Ireland,6,5
+256,48 to 60,Non Dairy,F,Ireland,0,5
+257,48 to 60,Non Dairy,M,Ireland,0,5
+258,60 to 72,Dairy,F,Ireland,6,1
+259,60 to 72,Non Dairy,F,Ireland,0,1
+260,60 to 72,Non Dairy,M,Ireland,0,1
+261,72 and Over,Dairy,F,Ireland,3,1
+262,72 and Over,Non Dairy,F,Ireland,0,1
+263,72 and Over,Non Dairy,M,Ireland,0,1
+264,Under 1,Non Dairy,F,Netherlands,0,1
+265,Under 1,Non Dairy,M,Netherlands,0,1
+266,1 to 2,Non Dairy,F,Netherlands,0,3
+267,1 to 2,Non Dairy,M,Netherlands,0,3
+268,2 to 3,Dairy,M,Netherlands,0,3
+269,2 to 3,Non Dairy,F,Netherlands,0,3
+270,2 to 3,Non Dairy,M,Netherlands,0,3
+271,3 to 4,Dairy,M,Netherlands,0,3
+272,3 to 4,Non Dairy,F,Netherlands,0,3
+273,3 to 4,Non Dairy,M,Netherlands,0,3
+274,4 to 5,Dairy,M,Netherlands,2,5
+275,4 to 5,Non Dairy,F,Netherlands,0,5
+276,4 to 5,Non Dairy,M,Netherlands,0,5
+277,5 to 6,Dairy,M,Netherlands,0,1
+278,5 to 6,Non Dairy,F,Netherlands,0,1
+279,5 to 6,Non Dairy,M,Netherlands,0,1
+280,6 to 12,Dairy,F,Netherlands,7,1
+281,6 to 12,Dairy,M,Netherlands,5,1
+282,6 to 12,Non Dairy,F,Netherlands,0,1
+283,6 to 12,Non Dairy,M,Netherlands,0,1
+284,12 to 24,Dairy,F,Netherlands,138,3
+285,12 to 24,Dairy,M,Netherlands,1,3
+286,12 to 24,Non Dairy,F,Netherlands,0,3
+287,12 to 24,Non Dairy,M,Netherlands,0,3
+288,24 to 30,Dairy,F,Netherlands,155,3
+289,24 to 30,Dairy,M,Netherlands,0,3
+290,24 to 30,Non Dairy,F,Netherlands,1,3
+291,24 to 30,Non Dairy,M,Netherlands,0,3
+292,30 to 36,Dairy,F,Netherlands,21,5
+293,30 to 36,Non Dairy,F,Netherlands,0,5
+294,30 to 36,Non Dairy,M,Netherlands,0,5
+295,36 to 48,Dairy,F,Netherlands,4,5
+296,36 to 48,Dairy,M,Netherlands,0,5
+297,36 to 48,Non Dairy,F,Netherlands,0,5
+298,36 to 48,Non Dairy,M,Netherlands,1,5
+299,48 to 60,Dairy,F,Netherlands,0,5
+300,48 to 60,Non Dairy,F,Netherlands,0,5
+301,48 to 60,Non Dairy,M,Netherlands,0,5
+302,60 to 72,Dairy,F,Netherlands,0,1
+303,60 to 72,Non Dairy,F,Netherlands,0,1
+304,60 to 72,Non Dairy,M,Netherlands,0,1
+305,72 and Over,Dairy,F,Netherlands,0,1
+306,72 and Over,Non Dairy,F,Netherlands,0,1
+307,72 and Over,Non Dairy,M,Netherlands,0,1
+308,Under 1,Non Dairy,F,Northern_ireland,2,1
+309,Under 1,Non Dairy,M,Northern_ireland,1,1
+310,1 to 2,Non Dairy,F,Northern_ireland,0,3
+311,1 to 2,Non Dairy,M,Northern_ireland,1,3
+312,2 to 3,Dairy,M,Northern_ireland,14,3
+313,2 to 3,Non Dairy,F,Northern_ireland,1,3
+314,2 to 3,Non Dairy,M,Northern_ireland,0,3
+315,3 to 4,Dairy,M,Northern_ireland,45,3
+316,3 to 4,Non Dairy,F,Northern_ireland,0,3
+317,3 to 4,Non Dairy,M,Northern_ireland,1,3
+318,4 to 5,Dairy,M,Northern_ireland,15,5
+319,4 to 5,Non Dairy,F,Northern_ireland,3,5
+320,4 to 5,Non Dairy,M,Northern_ireland,0,5
+321,5 to 6,Dairy,M,Northern_ireland,16,1
+322,5 to 6,Non Dairy,F,Northern_ireland,1,1
+323,5 to 6,Non Dairy,M,Northern_ireland,1,1
+324,6 to 12,Dairy,F,Northern_ireland,2,1
+325,6 to 12,Dairy,M,Northern_ireland,12,1
+326,6 to 12,Non Dairy,F,Northern_ireland,12,1
+327,6 to 12,Non Dairy,M,Northern_ireland,5,1
+328,12 to 24,Dairy,F,Northern_ireland,5,3
+329,12 to 24,Dairy,M,Northern_ireland,13,3
+330,12 to 24,Non Dairy,F,Northern_ireland,171,3
+331,12 to 24,Non Dairy,M,Northern_ireland,525,3
+332,24 to 30,Dairy,F,Northern_ireland,39,3
+333,24 to 30,Dairy,M,Northern_ireland,22,3
+334,24 to 30,Non Dairy,F,Northern_ireland,141,3
+335,24 to 30,Non Dairy,M,Northern_ireland,385,3
+336,30 to 36,Dairy,F,Northern_ireland,15,5
+337,30 to 36,Non Dairy,F,Northern_ireland,23,5
+338,30 to 36,Non Dairy,M,Northern_ireland,30,5
+339,36 to 48,Dairy,F,Northern_ireland,20,5
+340,36 to 48,Dairy,M,Northern_ireland,1,5
+341,36 to 48,Non Dairy,F,Northern_ireland,8,5
+342,36 to 48,Non Dairy,M,Northern_ireland,4,5
+343,48 to 60,Dairy,F,Northern_ireland,10,5
+344,48 to 60,Non Dairy,F,Northern_ireland,12,5
+345,48 to 60,Non Dairy,M,Northern_ireland,1,5
+346,60 to 72,Dairy,F,Northern_ireland,4,1
+347,60 to 72,Non Dairy,F,Northern_ireland,4,1
+348,60 to 72,Non Dairy,M,Northern_ireland,0,1
+349,72 and Over,Dairy,F,Northern_ireland,4,1
+350,72 and Over,Non Dairy,F,Northern_ireland,12,1
+351,72 and Over,Non Dairy,M,Northern_ireland,1,1
+352,Under 1,Non Dairy,F,Sweden,0,1
+353,Under 1,Non Dairy,M,Sweden,0,1
+354,1 to 2,Non Dairy,F,Sweden,0,3
+355,1 to 2,Non Dairy,M,Sweden,0,3
+356,2 to 3,Dairy,M,Sweden,0,3
+357,2 to 3,Non Dairy,F,Sweden,0,3
+358,2 to 3,Non Dairy,M,Sweden,0,3
+359,3 to 4,Dairy,M,Sweden,0,3
+360,3 to 4,Non Dairy,F,Sweden,0,3
+361,3 to 4,Non Dairy,M,Sweden,0,3
+362,4 to 5,Dairy,M,Sweden,0,5
+363,4 to 5,Non Dairy,F,Sweden,0,5
+364,4 to 5,Non Dairy,M,Sweden,0,5
+365,5 to 6,Dairy,M,Sweden,0,1
+366,5 to 6,Non Dairy,F,Sweden,0,1
+367,5 to 6,Non Dairy,M,Sweden,0,1
+368,6 to 12,Dairy,F,Sweden,1,1
+369,6 to 12,Dairy,M,Sweden,0,1
+370,6 to 12,Non Dairy,F,Sweden,0,1
+371,6 to 12,Non Dairy,M,Sweden,0,1
+372,12 to 24,Dairy,F,Sweden,25,3
+373,12 to 24,Dairy,M,Sweden,0,3
+374,12 to 24,Non Dairy,F,Sweden,0,3
+375,12 to 24,Non Dairy,M,Sweden,0,3
+376,24 to 30,Dairy,F,Sweden,7,3
+377,24 to 30,Dairy,M,Sweden,0,3
+378,24 to 30,Non Dairy,F,Sweden,0,3
+379,24 to 30,Non Dairy,M,Sweden,0,3
+380,30 to 36,Dairy,F,Sweden,0,5
+381,30 to 36,Non Dairy,F,Sweden,0,5
+382,30 to 36,Non Dairy,M,Sweden,0,5
+383,36 to 48,Dairy,F,Sweden,1,5
+384,36 to 48,Dairy,M,Sweden,0,5
+385,36 to 48,Non Dairy,F,Sweden,0,5
+386,36 to 48,Non Dairy,M,Sweden,0,5
+387,48 to 60,Dairy,F,Sweden,0,5
+388,48 to 60,Non Dairy,F,Sweden,0,5
+389,48 to 60,Non Dairy,M,Sweden,0,5
+390,60 to 72,Dairy,F,Sweden,0,1
+391,60 to 72,Non Dairy,F,Sweden,0,1
+392,60 to 72,Non Dairy,M,Sweden,0,1
+393,72 and Over,Dairy,F,Sweden,0,1
+394,72 and Over,Non Dairy,F,Sweden,0,1
+395,72 and Over,Non Dairy,M,Sweden,0,1
