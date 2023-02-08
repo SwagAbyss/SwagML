@@ -59,3 +59,5 @@ def main():
 
 if __name__=='__main__':
     main()
+
+# streamlit run "Projects/diabetes/Model/Diabetes_prediction_app.py"
