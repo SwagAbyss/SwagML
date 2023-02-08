@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb  8 05:01:25 2023
-
-@author: swag
-"""
-
 import numpy as np
 import pickle
 import streamlit as st
