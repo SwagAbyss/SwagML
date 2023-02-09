@@ -1,4 +1,13 @@
 {
-    "python.formatting.provider": "autopep8",
-    "notebook.output.textLineLimit": 1000
+    "python.formatting.provider": "black",
+    "notebook.output.textLineLimit": 1000,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFoldingRangeProvider": "ms-python.black-formatter"
+    }
 }
