@@ -2,9 +2,9 @@ import numpy as np
 import pickle
 
 # loading the saved model
-loaded_model = pickle.load(open('/Users/swag/Documents/GitHub/SwagML/Projects/diabetes/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
-input_data = [4,110,92,0,0,37.6,0.191,30]
+input_data = [4, 110, 92, 0, 0, 37.6, 0.191, 130]
 
 # changing the input data into numpy array
 input_data_as_array = np.asarray(input_data)
