@@ -3,11 +3,11 @@ import pickle
 import streamlit as st
 
 # loading the saved model
-loaded_model = pickle.load(open('/Users/swag/Documents/GitHub/SwagML/Projects/diabetes/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('/Users/swag/Documents/GitHub/SwagML/Project_Notebooks/diabetes/Model/trained_model.sav', 'rb'))
 
-# dcreating a fuction for prediction
+
+# creating a function for prediction
 def diabetes_prediction(input_data):
-    
     # changing the input data into numpy array
     input_data_as_array = np.asarray(input_data)
 
@@ -19,12 +19,12 @@ def diabetes_prediction(input_data):
     # print(prediction)
 
     if prediction == 0:
-        return'The person is not Diabetic'
+        return 'The person is not Diabetic'
     else:
-        return'The person is Diabetic'
+        return 'The person is Diabetic'
+
 
 def main():
-
     # Giving a title
     st.title('Diabetes Prediction App')
 
@@ -44,12 +44,13 @@ def main():
     # creating a button for prediction
     if st.button('Submit'):
         diagnosis = diabetes_prediction(
-            [Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]
+            [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]
         )
 
     st.success(diagnosis)
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
 
 # streamlit run "Projects/diabetes/Model/Diabetes_prediction_app.py"
