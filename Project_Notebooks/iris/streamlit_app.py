@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 
-import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
@@ -99,12 +99,9 @@ X_projected = pca.fit_transform(X)
 x1 = X_projected[:, 0]
 x2 = X_projected[:, 1]
 
-fig = plt.figure()
-plt.scatter(x1, x2, c=y, alpha=0.8, cmap="viridis")
+fig = sns.scatterplot(x=x1, y=x2, hue=y, palette="viridis")
 
-plt.xlabel("Principal Component 1")
-plt.ylabel("Principal Component 2")
-plt.colorbar()
+fig.set(xlabel="Principal Component 1", ylabel="Principal Component 2")
+fig.legend(title="Classes")
 
-# plt.show()
-st.pyplot(fig)
+st.pyplot(fig.figure)
