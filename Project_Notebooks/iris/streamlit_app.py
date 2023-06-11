@@ -91,17 +91,17 @@ acc = accuracy_score(y_test, y_pred)
 st.write(f"Classifier = {classifier_name}")
 st.write("Accuracy =", acc)
 
-#### PLOT DATASET ####
-# Project the data onto the 2 primary principal components
-pca = PCA(2)
-X_projected = pca.fit_transform(X)
+# #### PLOT DATASET ####
+# # Project the data onto the 2 primary principal components
+# pca = PCA(2)
+# X_projected = pca.fit_transform(X)
 
-x1 = X_projected[:, 0]
-x2 = X_projected[:, 1]
+# x1 = X_projected[:, 0]
+# x2 = X_projected[:, 1]
 
-fig = sns.scatterplot(x=x1, y=x2, hue=y, palette="viridis")
+# fig = sns.scatterplot(x=x1, y=x2, hue=y, palette="viridis")
 
-fig.set(xlabel="Principal Component 1", ylabel="Principal Component 2")
-fig.legend(title="Classes")
+# fig.set(xlabel="Principal Component 1", ylabel="Principal Component 2")
+# fig.legend(title="Classes")
 
-st.pyplot(fig.figure)
+# st.pyplot(fig.figure)
