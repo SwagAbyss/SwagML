@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 
-import seaborn as sns
+# import seaborn as sns
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
