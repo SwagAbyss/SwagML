@@ -1,35 +1,86 @@
-<mxfile modified="2024-04-06T06:16:27.316Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" etag="QIypPpY-EmPWZ1otIxvu" version="24.2.2" type="github">
+<mxfile modified="2024-04-06T06:37:09.287Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" etag="YQ2ALUhpbeKH_AdZg6IG" version="24.2.2" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
-    <mxGraphModel dx="1089" dy="943" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1693" dy="1467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-2" value="VPC" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="200" width="800" height="440" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-2" value="VPC" style="outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="800" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-4" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" vertex="1" parent="1">
-          <mxGeometry x="360" y="280" width="280" height="280" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-13" value="AWS Cloud" style="outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;strokeColor=#AAB7B8;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="960" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-12" value="Amazon EC2" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;" vertex="1" parent="cpXcQ29Wl2lxpjQppBSQ-4">
-          <mxGeometry x="100" y="90" width="80" height="100" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-4" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="280" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-7" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" vertex="1" parent="1">
-          <mxGeometry x="720" y="280" width="280" height="280" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-12" value="Amazon EC2" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;rounded=1;" vertex="1" parent="cpXcQ29Wl2lxpjQppBSQ-4">
+          <mxGeometry x="100" y="160" width="80" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-11" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_oracle_instance;" vertex="1" parent="cpXcQ29Wl2lxpjQppBSQ-7">
-          <mxGeometry x="101" y="102" width="78" height="78" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-31" value="Application Load Balancer" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.application_load_balancer;rounded=1;" vertex="1" parent="cpXcQ29Wl2lxpjQppBSQ-4">
+          <mxGeometry x="100" y="24" width="80" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-13" value="AWS Cloud" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;strokeColor=#AAB7B8;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" vertex="1" parent="1">
-          <mxGeometry x="200" y="120" width="960" height="600" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-32" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="cpXcQ29Wl2lxpjQppBSQ-4" source="cpXcQ29Wl2lxpjQppBSQ-12" target="cpXcQ29Wl2lxpjQppBSQ-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="280" as="sourcePoint" />
+            <mxPoint x="350" y="230" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-14" value="Auto Scaling group" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.groupCenter;grIcon=mxgraph.aws4.group_auto_scaling_group;grStroke=1;strokeColor=#D86613;fillColor=none;verticalAlign=top;align=center;fontColor=#D86613;dashed=1;spacingTop=25;" vertex="1" parent="1">
-          <mxGeometry x="390" y="320" width="210" height="200" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-7" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="320" width="280" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-15" value="" style="aspect=fixed;sketch=0;html=1;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=user;" vertex="1" parent="1">
-          <mxGeometry x="110" width="50" height="48" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-11" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_oracle_instance;rounded=1;" vertex="1" parent="cpXcQ29Wl2lxpjQppBSQ-7">
+          <mxGeometry x="101" y="70" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-16" value="Internet&#xa;gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_gateway;" vertex="1" parent="1">
-          <mxGeometry x="465" y="90" width="60" height="60" as="geometry" />
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-15" value="" style="aspect=fixed;html=1;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=user;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="40" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-16" value="Internet&#xa;gateway" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_gateway;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="130" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-19" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;endSize=8;startSize=8;rounded=1;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cpXcQ29Wl2lxpjQppBSQ-15" target="cpXcQ29Wl2lxpjQppBSQ-16">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="370" y="160" as="sourcePoint" />
+            <mxPoint x="420" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="415" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-20" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1" source="cpXcQ29Wl2lxpjQppBSQ-16" target="cpXcQ29Wl2lxpjQppBSQ-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="460" as="sourcePoint" />
+            <mxPoint x="415" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-23" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1" source="cpXcQ29Wl2lxpjQppBSQ-12" target="cpXcQ29Wl2lxpjQppBSQ-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="550" as="sourcePoint" />
+            <mxPoint x="610" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-26" value="&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&lt;u&gt;I. Architecture Components:&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font size=&quot;5&quot;&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;1. Virtual Private Cloud (VPC):&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;A VPC provides isolated virtual network environments in the AWS cloud. We create a VPC to host all the resources securely.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;&quot;&gt;2. Public and Private Subnets:&lt;/span&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Within the VPC, we create public and private subnets across different Availability Zones (AZs) for high availability and fault tolerance.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Public subnets will host resources like the IIS server, while private subnets will host the Oracle Linux server for the database.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;3. Internet Gateway (IGW):&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;The Internet Gateway allows communication between instances in the VPC and the internet. It&#39;s attached to the VPC&#39;s routing table for internet access.&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;4. NAT Gateway:&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;The NAT Gateway allows instances in the private subnet to initiate outbound internet traffic while preventing inbound traffic from reaching them directly.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;5. Elastic Load Balancer (ELB):&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;An ELB is placed in front of the IIS servers to distribute incoming traffic across multiple instances for load balancing and high availability.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;6. Amazon EC2 Instances:&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;EC2 instances running Windows Server will be provisioned in the public subnet to host IIS for the application.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;7. Amazon RDS for Oracle:&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;Amazon RDS provides managed Oracle database instances. We deploy Oracle Linux servers within a private subnet and install Oracle Database on them.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;8. Security Groups:&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;Security Groups are used to control inbound and outbound traffic to EC2 instances and RDS instances. They act as virtual firewalls.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;II. Architecture Flow:&lt;br&gt;&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Users access the application through the internet, hitting the ELB.&lt;br&gt;&lt;/li&gt;&lt;li&gt;The ELB distributes incoming requests to the IIS servers running on EC2 instances in the public subnet.&lt;br&gt;&lt;/li&gt;&lt;li&gt;IIS servers process the requests and interact with the Oracle Database hosted on RDS instances in the private subnet.&lt;br&gt;&lt;/li&gt;&lt;li&gt;The Oracle Database stores and retrieves data as required by the application.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1190" width="630" height="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-27" value="NAT gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.nat_gateway;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="240" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-28" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1" source="cpXcQ29Wl2lxpjQppBSQ-16" target="cpXcQ29Wl2lxpjQppBSQ-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="470" as="sourcePoint" />
+            <mxPoint x="790" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cpXcQ29Wl2lxpjQppBSQ-30" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=1;" edge="1" parent="1" source="cpXcQ29Wl2lxpjQppBSQ-11" target="cpXcQ29Wl2lxpjQppBSQ-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="370" as="sourcePoint" />
+            <mxPoint x="730" y="320" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
